@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="popup.js" defer></script>
+    <style>
+    body {
+        background: #555252;
+      font-family: Arial, sans-serif;
+      color: #f5695f;
+      margin: 0;
+      padding: 10px;
+      width: 200px;
+    }
+button {
+  background: #fbca1f;
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 18px;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+
+button:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>auto YouTube videoplay @1.5x</h1>
+        <button id="closeButton">Close</button>
+        <script>
+            document.getElementById('closeButton').addEventListener('click', () => {
+                window.close();
+            });
+        </script>
+    </header>
+</body>
+</html>

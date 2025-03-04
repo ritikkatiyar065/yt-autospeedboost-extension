@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "version": "1.0",
+    "name": "Youtube automatic speed booster",
+    "description": "This extension automatically sets the playback speed of youtube videos to 1.5x",
+    "permissions": [
+        "activeTab"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "image.png",
+            "48": "image.png"
+        }
+    },
+    
+        
+    "content_scripts": [
+        {
+            "matches": ["*://*.youtube.com/*"],
+            "run_at": "document_idle",
+            "js": ["content.js"]
+        }
+    ]
+
+}
