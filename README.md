@@ -1,0 +1,1 @@
+# yt-autospeedboost-extension
